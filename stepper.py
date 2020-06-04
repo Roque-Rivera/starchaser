@@ -105,6 +105,6 @@ for i in range(num_steps):
     StepCounter = 0
   if (StepCounter<0):
     StepCounter = StepCount+StepDir
-  print(i)
+  #print(i)
   # Wait before moving on
   time.sleep(WaitTime)
