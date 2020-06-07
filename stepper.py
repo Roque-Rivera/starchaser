@@ -59,28 +59,33 @@ StepCount = len(Seq)
 StepDir = 1 # Set to 1 or 2 for clockwise
             # Set to -1 or -2 for anti-clockwise
 
-# Read wait time from command line
+# Read stepDir from command line
 if len(sys.argv)>2:
   StepDir = int(sys.argv[2])
 else:
   StepDir = 1
 
+# Initialise variables
+StepCounter = 0
 
 # Read wait time from command line
 if len(sys.argv)>1:
   WaitTime = int(sys.argv[1])/float(1000)
 else:
   WaitTime = 10/float(1000)
-
-# Initialise variables
-StepCounter = 0
-
-
 # Read wait time from command line
 if len(sys.argv)>3:
   num_steps = int(sys.argv[3])
 else:
   num_steps = 4096
+
+
+
+
+
+
+
+
 
 
 # Start main loop
